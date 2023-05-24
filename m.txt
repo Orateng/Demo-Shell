@@ -1,0 +1,29 @@
+/*
+int prompt(void)
+{
+        char *prompt = "$ ",
+        ssize_t writecount = 0;
+
+        if (isatty(STDIN_FILENO) == 1)
+        {
+                writecount = write(STDOUT_FILENO, prompt, 2);
+                if (writecount == -1)
+                        exit(0);
+        }
+        return (0);
+
+}
+
+int exitcmd(char **argv)
+{
+        char *buff = NULL;
+
+        free(buff);
+                if (isatty(STDIN_FILENO) != 0)
+                {
+                        if (argv[0] == "exit")
+                        write(STDOUT_FILENO, "\n", 1);
+                        exit(0);
+                }
+}
+*/
